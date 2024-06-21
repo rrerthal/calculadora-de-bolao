@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de probabilidade para bolões</h1>
+        <form id="lotteryForm" class="form-inline">
+            <div class="form-group mr-2">
+                <label for="totalMoney" class="sr-only">Dinheiro Total</label>
+                <input type="number" class="form-control" id="totalMoney" placeholder="R$" min="5" max="100000000">
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="container mt-5">
+        <h1>Gerador de jogos</h1>
+        <form id="generateForm" class="form-inline">
+            <div class="form-group mr-2">
+                <label for="numToGenerate" class="sr-only">Números a Gerar</label>
+                <input type="number" class="form-control" id="numToGenerate" placeholder="6-15" min="6" max="15">
+            </div>
+            <button type="button" id="generateNumbers" class="btn btn-primary">Gerar Números</button>
+        </form>
+
+        <div id="generatedNumbers"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
